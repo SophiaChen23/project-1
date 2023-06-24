@@ -27,7 +27,14 @@ header {
 .logo-small {
     width: 200px; /* Adjust the width of the images as desired */
 }
-nav ul {
+
+
+/*<nav class = "header-nav">*/
+.header-nav {
+    padding: 10px; /* Adjust the padding as per your design */
+}
+
+.header-nav ul {
     text-align: center;
     list-style-type: none;
     margin: 0;
@@ -36,16 +43,17 @@ nav ul {
     justify-content: center; /* Align the list items horizontally in the middle */
 }
 
-nav ul li {
+.header-nav ul li {
     position: sticky;
     color: black;
     margin: 0 10px; /* Adjust the margin to add space between each list item */
 }
 
-nav ul li a {
+.header-nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 
 
 main {
@@ -106,3 +114,189 @@ form input, form button {
     justify-content: space-between;
     align-items: center;
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 43px;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 10px;
+}
+.button-container {
+    position: absolute;
+    bottom: 250px; /* Adjust the position as per your design */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+.button {
+    margin: 0 10px; /* Adjust the margin as per your design */
+    padding: 10px 20px; /* Adjust the padding as per your design */
+    font-size: 16px; /* Adjust the font size as per your design */
+    color: deepskyblue;
+    border: none;
+    border-radius: 25px; /
+}
+
+.footer {
+    background-image: url("images/footer-bg.jpeg"); /* Replace with the path to your background image */
+    background-size: cover; /* Adjust the background size property as per your design */
+    background-position: center; /* Adjust the background position property as per your design */
+    background-repeat: no-repeat; /* Adjust the background repeat property as per your design */
+    /* Add additional styling for the footer */
+    /* Add padding, text color, etc. */
+    height:600px;
+
+}
+
+
+.footer-nav {
+
+    padding: 10px; /* Adjust the padding as per your design */
+    display: inline-block;
+    margin-right: 20px;
+    padding:4em;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin-right: 10px; /* Adjust the margin as per your design */
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #333; /* Set the link color as per your design */
+}
+
+.footer-nav ul li a:hover {
+    color: blue; /* Set the link color on hover as per your design */
+}
+footer  .social{
+    padding:2.5em;
+    float:left;
+    display: inline-block;
+}
+
+footer  p {
+    font-size: 0.85em;
+    display: inline-block;
+    margin: 0 5px; /* Adjust the margin as per your design */
+}
+footer .social .fa {
+    display: inline-block;
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+footer .social .fa:hover {
+    opacity: 0.9;
+}
+footer  .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+footer  .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+footer  .social .fa-instagram{
+    background: #E1306C;
+    color: white;
+}
+footer  .social .fa-linkedin{
+    background: #125688;
+    color: white;
+}
+footer  .social .fa-pinterest{
+    background: #BD081C;
+    color: white;
+}
+footer  .social .fa-youtube{
+    background: #FF0000;
+    color: white;
+}
+
+.line {
+    height: 1px;
+    background-color: lightgrey; /* Adjust the color as per your design */
+    margin-top: 0px; /* Adjust the top margin as per your design */
+    width: 100%;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Adjust the height as needed */
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    /*margin: 0 auto;*/
+}
+
+th, td {
+    padding: 19px;
+    font-size: 16px;
+
+}
+
+
+
+
+#partners {
+    width: 100%;
+    padding: 2em 0;
+    margin: 0 auto;
+    text-align: left;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+#partners .partner {
+    display: inline-block;
+    margin: 0 0.5em;
+    padding: 1.3em 1.5em;
+
+    border-radius: 50%;
+}
+
+#partners .partner img {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+#partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+
+
+
