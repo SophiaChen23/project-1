@@ -33,15 +33,17 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center; /* Align the list items horizontally in the middle */
 }
 
 nav ul li {
     position: sticky;
-    color:black;
+    color: black;
+    margin: 0 10px; /* Adjust the margin to add space between each list item */
 }
 
 nav ul li a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -79,4 +81,28 @@ form input, form button {
     width: 200px;
     height: auto;
     margin: 10px;
+}
+
+.user-section {
+    margin-left: auto;
+}
+
+.user-section a {
+    margin-left: 10px; /* Adjust the margin as per your design */
+    text-decoration: none;
+    color: blue; /* Set the font color to blue */
+    background-color: white; /* Set the background color to white */
+    padding: 5px 10px; /* Adjust the padding as per your design */
+    border: 1px solid white; /* Add a border with white color */
+    border-radius: 5px; /* Adjust the border radius as per your design */
+}
+
+.user-section a:hover {
+    background-color: blue; /* Set the background color on hover to blue */
+    color: white; /* Set the font color on hover to white */
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
