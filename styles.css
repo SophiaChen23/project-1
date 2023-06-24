@@ -10,13 +10,25 @@ header, nav, main, footer {
 }
 
 header {
-    background-color: #55ACEE;
-    color: #fff;
-    text-align: center; /* Center the heading */
+    background-color: black;
+
+    /*text-align: center; !* Center the heading *!*/
     padding: 20px;
+    height: 300px;
+}
+.logo-container {
+    display: flex;
+    /*align-items: center;*/
 }
 
+.logo {
+    margin-left: 0px; /* Adjust the spacing between the images if needed */
+}
+.logo-small {
+    width: 200px; /* Adjust the width of the images as desired */
+}
 nav ul {
+    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,12 +36,12 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px;
+    position: sticky;
     color:black;
 }
 
 nav ul li a {
-    color: black;
+    color:white;
     text-decoration: none;
 }
 
