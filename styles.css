@@ -300,3 +300,74 @@ th, td {
 
 
 
+
+.image-container1 {
+    position: relative;
+     height: 574px
+    /*display: inline-block;*/
+}
+
+.image-container1 .image-text  {
+    position: absolute;
+    top: 44%;
+    left: 30%;
+    right:30%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 16px;
+
+    /*text-align: center;*/
+
+    padding: 10px;
+}
+.image-container1 .image-text p {
+    font-weight: normal;
+}
+.image-container1 .image-text .special {
+    text-align: left;
+    text-indent: 1em;
+    list-style-type: disc;
+    margin: 0; /* Optional: remove any default margin */
+}
+.underline {
+    text-decoration: underline;
+}
+
+.button.register {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.image-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Adjust width, height, and other properties as needed */
+}
+
+
+.image-container2 img[src="images/home-our-locations-map.png"] {
+    width: 574px; /* Adjust the desired width */
+    height: auto; /* Maintain the aspect ratio */
+    right: 0;
+    z-index: 1;
+    /*right: 10%;*/
+
+}
+/*.image-container2 img[src="images/home-our-locations-bg.png"] {*/
+/*    width: 100%; !* Adjust the width as needed *!*/
+/*    height: auto; !* Maintain the aspect ratio *!*/
+/*    z-index: 0;*/
+/*}*/
+
+
+
