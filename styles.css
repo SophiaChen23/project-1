@@ -5,6 +5,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 /* Header styles */
@@ -83,6 +90,13 @@ main {
     align-items: center;
     color: #000000;
     text-align: center;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .image-container {
@@ -177,11 +191,6 @@ main {
     /* Add your desired CSS styles here */
 }
 /* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 /* Header styles */
 header, nav, main, footer {
@@ -452,7 +461,7 @@ th, td {
     justify-content: center;
 }
 
-.award-item
+
 .award-item {
     flex-basis: 50%;
     max-width: 200px;
