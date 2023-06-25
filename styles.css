@@ -262,68 +262,6 @@ main {
     text-align: center;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 43px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-}
-
-.button-container {
-    position: absolute;
-    bottom: 250px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-.button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: deepskyblue;
-    border: none;
-    border-radius: 25px;
-}
-
-.image-container1 {
-    position: relative;
-    height: 574px;
-}
-
-.image-container1 .image-text {
-    position: absolute;
-    top: 44%;
-    left: 30%;
-    right: 30%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
-}
-
-.image-container1 .image-text p {
-    font-weight: normal;
-}
-
-.image-container1 .image-text .special {
-    text-align: left;
-    text-indent: 1em;
-    list-style-type: disc;
-    margin: 0;
-}
-
 .underline {
     text-decoration: underline;
 }
@@ -636,9 +574,7 @@ th, td {
         bottom: 250px;
     }
 
-    .image-container1 .image-text {
-        font-size: 18px;
-    }
+
 
     .footer-nav {
         margin-right: 20px;
