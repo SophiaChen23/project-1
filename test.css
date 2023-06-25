@@ -656,8 +656,8 @@ th, td {
 
     table {
         font-size: 18px;
-    }}
-
+    }
+}
 
 
 /* Responsive Styles */
@@ -697,111 +697,3 @@ th, td {
     }
 }
 /* Small screens */
-/* Small screens */
-.table-container4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.table-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.table-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-    text-align: center;
-}
-
-.ass {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-}
-/* Large screens */
-@media (min-width: 992px) {
-    .table-row {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
-    }
-}
-
-/* Medium screens */
-@media (min-width: 768px) and (max-width: 991px) {
-    .table-row {
-        display: grid;
-        grid-template-columns: repeat(2, 4fr);
-        grid-gap: 20px;
-    }
-}
-
-/* Small screens */
-@media (max-width: 767px) {
-    .table-row {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-}
-.my-table {
-    border-collapse: collapse;
-    font-size: 3px; /* Set the font size */
-
-}
-
-.my-table td {
-    border: none;
-    padding: 10px; /* Set the cell size */
-}
-
-.highlighted {
-    color: black; /* Set the background color for highlighted cells */
-    font-size: 20px;
-}
-.normal {
-    color: #55ACEE; /* Set the font color */
-    font-size: 12px;
-}
-
-
-.my-table {
-    border-collapse: collapse;
-    font-size: 16px;
-    color: #333;
-}
-
-.my-table td {
-    border: none;
-    padding: 12px;
-}
-
-/*!* Big screens *!*/
-/*@media (min-width: 992px) {*/
-/*    .my-table {*/
-/*        !* Styles for big screens *!*/
-/*        display: grid;*/
-/*        grid-template-columns: repeat(3, 1fr);*/
-/*        grid-template-rows: repeat(14, auto);*/
-/*    }*/
-/*}*/
-
-/*!* Medium and small screens *!*/
-/*@media (max-width: 991px) {*/
-/*    .my-table {*/
-/*        !* Styles for medium and small screens *!*/
-/*        display: grid;*/
-/*        grid-template-columns: repeat(2, 1fr);*/
-/*        grid-template-rows: repeat(21, auto);*/
-/*    }*/
-/*}*/
