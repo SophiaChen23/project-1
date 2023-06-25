@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sign In</title>
+    <style>
+        img.bear {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .pig {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .container {
+            max-width: 1000px; /* Adjust the width as desired */
+            min-width: 600px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .required-label {
+            color: red;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #428bca;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: #428bca;
+        }
+
+        .warning {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "") {
+                document.getElementById("usernameWarning").style.display = "block";
+                return false;
+            }
+
+            if (password === "") {
+                document.getElementById("passwordWarning").style.display = "block";
+                return false;
+            }
+
+            if (username !== "username" || password !== "password") {
+                document.getElementById("loginWarning").style.display = "block";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+<img src = "images/splash-wave.png" alt = "wave" class = "pig">
+<div class="container">
+    <img src = "images/shark-full.png" alt = "shark-full" class = "bear">
+    <h1>Sign In</h1>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username<span class="required-label">*</span>:</label>
+        <input type="text" id="username" name="username" required>
+        <p id="usernameWarning" class="warning" style="display: none;">Username must be 'username'</p>
+
+        <label for="password">Password<span class="required-label">*</span>:</label>
+        <input type="password" id="password" name="password" required>
+        <p id="passwordWarning" class="warning" style="display: none;">Password must be 'password'</p>
+
+        <input type="submit" value="Sign In">
+    </form>
+
+    <p id="loginWarning" class="warning" style="display: none;">Invalid username or password</p>
+
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+    <p><a href="forgotpassword.html">Forgot password?</a></p>
+</div>
+</body>
+</html>

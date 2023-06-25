@@ -12,13 +12,13 @@ header, nav, main, footer {
 header {
     background-color: black;
 
-    /*text-align: center; !* Center the heading *!*/
+    text-align: center; /* Center the heading */
     padding: 20px;
-    height: 300px;
+    height: 100px;
 }
 .logo-container {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
 }
 
 .logo {
@@ -57,11 +57,11 @@ header {
 
 
 main {
-    background-image: url("image/mainclass.jpeg");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -316,7 +316,7 @@ th, td {
     color: black;
     font-size: 16px;
 
-    /*text-align: center;*/
+    text-align: center;
 
     padding: 10px;
 }
@@ -369,5 +369,8 @@ th, td {
 /*    z-index: 0;*/
 /*}*/
 
+.align-right {
+    text-align: right;
+}
 
 
